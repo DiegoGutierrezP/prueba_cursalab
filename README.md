@@ -11,15 +11,22 @@ Tecnologias Usadas:
     - Tailwind css
 
 Instalacion :
-    1.  Clonar proyecto
-    2.  Composer install
-    3.  npm install && npm run dev
-    4.  crear base de datos mysql nombre prueba_cursalab
-    5.  php artisan migrate
-    6.  php artisan db:seed
-    7.  php artisan serve
-    8.  registrar usuario y ingresar 
 
-1. Item Zed
-   1. Nested Numeric # indented 3 spaces
-2. Item One
+    1.  Clonar proyecto
+    
+    2.  Composer install
+    
+    3.  npm install && npm run dev
+    
+    4.  crear base de datos mysql nombre prueba_cursalab
+    
+    5.  php artisan migrate
+    
+    6.  php artisan db:seed
+    
+    7.  php artisan serve
+    
+    8.  registrar usuario y ingresar 
+    
+
+
