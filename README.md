@@ -19,3 +19,7 @@ Instalacion :
     6.  php artisan db:seed
     7.  php artisan serve
     8.  registrar usuario y ingresar 
+
+1. Item Zed
+   1. Nested Numeric # indented 3 spaces
+2. Item One
