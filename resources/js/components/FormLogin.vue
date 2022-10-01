@@ -61,6 +61,10 @@
                             }
                         });
                         let json = await resp.data;
+                        if(json.status){
+                            localStorage.removeItem('x-token');
+                            localStorage.setItem('x-token',json.access_token);
+                        }
                         window.location.reload();
                         console.log(json)
                     }catch(err){

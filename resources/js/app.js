@@ -22,7 +22,9 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('form-login', require('./components/FormLogin.vue').default);
 Vue.component('form-register', require('./components/FormRegister.vue').default);
-
+Vue.component('header-component', require('./components/Header.vue').default);
+Vue.component('grid-cursos', require('./components/GridCursos.vue').default);
+Vue.component('show-curso', require('./components/ShowCurso.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

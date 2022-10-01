@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Curso;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,9 @@ class AuthController extends Controller
         $user->password = Hash::make($request->password);
 
         $user->save();
+
+        $cursos_ids = Curso::select('id')->get();
+        $user->cursos()->attach($cursos_ids);
 
         //develve respuesta
         return response()->json([

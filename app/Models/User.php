@@ -42,5 +42,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function cursos()
+    {
+        return $this->belongsToMany('App\Models\Curso','user_curso');
+    }
+
     public $timestamps = false;
 }

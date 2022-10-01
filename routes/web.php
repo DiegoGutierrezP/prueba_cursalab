@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\api\AuthController;
+use App\Http\Controllers\Api\CursosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,6 +36,7 @@ Route::group(['middleware'=> ['auth:sanctum']],function(){
     Route::get('/',function(){
         return view('home');
     })->name('home');
+    Route::get('/curso/{id_curso}',[CursosController::class,'show'])->name('show.curso');
     Route::get('logout',[AuthController::class,'logout']);
 });
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\api\AuthController;
+use App\Http\Controllers\Api\CursosController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,8 @@ Route::group(['middleware'=> ['auth:sanctum']],function(){
         return 'estas logueado';
     });
     Route::get('logout',[AuthController::class,'logout']);
+    Route::get('cursos-user',[CursosController::class,'cursos_user']);
+    Route::get('get_curso/{id_curso}',[CursosController::class,'get_curso']);
 });
 
 Route::post('register',[AuthController::class,'register'])->name('auth.register');
