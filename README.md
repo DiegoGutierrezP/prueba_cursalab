@@ -3,7 +3,7 @@
 El proyecto trata de un sistema mostrador de cursos y capitulos, donde se podra avanzar entre los capitulos,
 con login y regsitro de usuario.
 
-Estado del Proyecto: Falta implementar la visualizacion de estados del curso.
+Estado del Proyecto: Falta implementar la visualizacion de estados del curso.(motivo falta de tiempo)
 
 Tecnologias Usadas:
     - Laravel 8
